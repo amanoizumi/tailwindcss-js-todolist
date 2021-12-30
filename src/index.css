@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.dot > div {
+  visibility: hidden;
+}
+li:hover > .dot > div {
+  visibility: visible;
+}
+
+[draggable="true"] {
+  /*
+  To prevent user selecting inside the drag source
+  */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
